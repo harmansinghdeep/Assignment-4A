@@ -51,6 +51,35 @@
 </nav>
 
 <main>
+  <div class="modal fade" id="booking-modal" tabindex="-1" aria-labelledby="booking-title" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="booking-title">
+          Book a Tour
+        </h2>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="modal-body">
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">
+          Checkout
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
   <section id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
   <button
@@ -86,7 +115,11 @@
   <h1 class="display-1 fw-bolder text-capitalize">
     Aurora Tours
   </h1>
-  <button class="btn btn-primary px-4 py-2 fs-5 mt-5">
+  <button
+  class="btn btn-primary px-4 py-2 fs-5 mt-5"
+  data-bs-toggle="modal"
+  data-bs-target="#booking-modal"
+>
     Book a Tour
   </button>
 </div>
@@ -100,7 +133,11 @@
   <h2 class="display-1 fw-bolder text-capitalize">
     Explore the Mountains
   </h2>
-  <button class="btn btn-primary px-4 py-2 fs-5 mt-5">
+  <button
+  class="btn btn-primary px-4 py-2 fs-5 mt-5"
+  data-bs-toggle="modal"
+  data-bs-target="#booking-modal"
+>
     Book a Tour
   </button>
 </div>
@@ -115,7 +152,11 @@
   <h2 class="display-1 fw-bolder text-capitalize">
     Winter Adventures
   </h2>
-  <button class="btn btn-primary px-4 py-2 fs-5 mt-5">
+  <button
+  class="btn btn-primary px-4 py-2 fs-5 mt-5"
+  data-bs-toggle="modal"
+  data-bs-target="#booking-modal"
+>
     Book a Tour
   </button>
 </div>
