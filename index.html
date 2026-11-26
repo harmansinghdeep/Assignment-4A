@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -20,385 +20,392 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand text-uppercase" href="#">
-      Aurora Tours
-    </a>
+      <div class="container">
+        <a class="navbar-brand text-uppercase" href="#"> Aurora Tours </a>
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#packages">Packages</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#faq">FAQ</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<main>
-  <div class="modal fade" id="booking-modal" tabindex="-1" aria-labelledby="booking-title" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title fs-5" id="booking-title">
-          Book a Tour
-        </h2>
         <button
+          class="navbar-toggler"
           type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-
-      <div class="modal-body">
-  <form>
-    <div class="row g-2">
-      <div class="col-sm-6">
-        <div class="form-floating">
-          <input
-            type="email"
-            class="form-control"
-            id="email1"
-            placeholder="Email address"
-          />
-          <label for="email1">Email address</label>
-        </div>
-      </div>
-
-      <div class="col-sm-6">
-        <div class="form-floating">
-          <select class="form-select" id="select1">
-            <option value="1">Northern Lights Tour</option>
-            <option value="2">Mountain Tour</option>
-            <option value="3">Winter Adventure</option>
-          </select>
-          <label for="select1">Pick a tour</label>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Close
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <button type="button" class="btn btn-primary">
-          Checkout
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div
+        class="modal fade"
+        id="booking-modal"
+        tabindex="-1"
+        aria-labelledby="booking-title"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="booking-title">Book a Tour</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <form>
+                <div class="row g-2">
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email1"
+                        placeholder="Email address"
+                      />
+                      <label for="email1">Email address</label>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <select class="form-select" id="select1">
+                        <option value="1">Northern Lights Tour</option>
+                        <option value="2">Mountain Tour</option>
+                        <option value="3">Winter Adventure</option>
+                      </select>
+                      <label for="select1">Pick a tour</label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section
+        id="hero-carousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img
+              src="images/slide1.jpg"
+              class="d-block w-100 c-img"
+              alt="Northern lights"
+            />
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase">Discover the hidden world</p>
+              <h1 class="display-1 fw-bolder text-capitalize">Aurora Tours</h1>
+              <button
+                class="btn btn-primary px-4 py-2 fs-5 mt-5"
+                data-bs-toggle="modal"
+                data-bs-target="#booking-modal"
+              >
+                Book a Tour
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel-item c-item">
+            <img
+              src="images/slide2.jpg"
+              class="d-block w-100 c-img"
+              alt="Mountain landscape"
+            />
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase">Experience the adventure</p>
+              <h2 class="display-1 fw-bolder text-capitalize">
+                Explore the Mountains
+              </h2>
+              <button
+                class="btn btn-primary px-4 py-2 fs-5 mt-5"
+                data-bs-toggle="modal"
+                data-bs-target="#booking-modal"
+              >
+                Book a Tour
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel-item c-item">
+            <img
+              src="images/slide3.jpg"
+              class="d-block w-100 c-img"
+              alt="Winter landscape"
+            />
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase">Discover new destinations</p>
+              <h2 class="display-1 fw-bolder text-capitalize">
+                Winter Adventures
+              </h2>
+              <button
+                class="btn btn-primary px-4 py-2 fs-5 mt-5"
+                data-bs-toggle="modal"
+                data-bs-target="#booking-modal"
+              >
+                Book a Tour
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-      </div>
-    </div>
-  </div>
-</div>
-  <section id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-  <button
-    type="button"
-    data-bs-target="#hero-carousel"
-    data-bs-slide-to="0"
-    class="active"
-    aria-current="true"
-    aria-label="Slide 1"
-  ></button>
 
-  <button
-    type="button"
-    data-bs-target="#hero-carousel"
-    data-bs-slide-to="1"
-    aria-label="Slide 2"
-  ></button>
-
-  <button
-    type="button"
-    data-bs-target="#hero-carousel"
-    data-bs-slide-to="2"
-    aria-label="Slide 3"
-  ></button>
-</div>
-    <div class="carousel-inner">
-      <div class="carousel-item active c-item">
-        <img src="images/slide1.jpg" class="d-block w-100 c-img" alt="Northern lights" />
-        <div class="carousel-caption top-0 mt-4">
-  <p class="mt-5 fs-3 text-uppercase">
-    Discover the hidden world
-  </p>
-  <h1 class="display-1 fw-bolder text-capitalize">
-    Aurora Tours
-  </h1>
-  <button
-  class="btn btn-primary px-4 py-2 fs-5 mt-5"
-  data-bs-toggle="modal"
-  data-bs-target="#booking-modal"
->
-    Book a Tour
-  </button>
-</div>
-      </div>
-
-      <div class="carousel-item c-item">
-        <img src="images/slide2.jpg" class="d-block w-100 c-img" alt="Mountain landscape" /><div class="carousel-caption top-0 mt-4">
-  <p class="mt-5 fs-3 text-uppercase">
-    Experience the adventure
-  </p>
-  <h2 class="display-1 fw-bolder text-capitalize">
-    Explore the Mountains
-  </h2>
-  <button
-  class="btn btn-primary px-4 py-2 fs-5 mt-5"
-  data-bs-toggle="modal"
-  data-bs-target="#booking-modal"
->
-    Book a Tour
-  </button>
-</div>
-      </div>
-
-      <div class="carousel-item c-item">
-        <img src="images/slide3.jpg" class="d-block w-100 c-img" alt="Winter landscape" />
-        <div class="carousel-caption top-0 mt-4">
-  <p class="mt-5 fs-3 text-uppercase">
-    Discover new destinations
-  </p>
-  <h2 class="display-1 fw-bolder text-capitalize">
-    Winter Adventures
-  </h2>
-  <button
-  class="btn btn-primary px-4 py-2 fs-5 mt-5"
-  data-bs-toggle="modal"
-  data-bs-target="#booking-modal"
->
-    Book a Tour
-  </button>
-</div>
-      </div>
-    </div>
-    <button
-  class="carousel-control-prev"
-  type="button"
-  data-bs-target="#hero-carousel"
-  data-bs-slide="prev"
->
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Previous</span>
-</button>
-
-<button
-  class="carousel-control-next"
-  type="button"
-  data-bs-target="#hero-carousel"
-  data-bs-slide="next"
->
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Next</span>
-</button>
-  </section>
-  <section class="overview">
-  <div class="container h-100 d-flex align-items-center">
-    <div class="row w-100 text-center fs-4">
-      <div class="col-xl">
-        <i class="bi bi-airplane-fill me-2"></i>
-        Amazing Destinations
-      </div>
-
-      <div class="col-xl">
-        <i class="bi bi-wallet-fill me-2"></i>
-        Affordable Prices
-      </div>
-
-      <div class="col-xl">
-        <i class="bi bi-person-check-fill me-2"></i>
-        Experienced Guides
-      </div>
-    </div>
-  </div>
-</section>
-<section id="packages" class="pt-md-5">
-  <h2 class="text-center my-5">Packages</h2>
-
-  <div class="container">
-    <div class="row g-4">
-
-      <div class="col-lg">
-        <div class="card">
-          <img
-            src="images/slide1.jpg"
-            class="card-img-top"
-            alt="Northern lights"
-          />
-          <div class="card-body">
-            <h3 class="card-title">Northern Lights Tour</h3>
-            <p class="card-text">
-              Discover the beauty of the northern lights.
-            </p>
-            <button
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#booking-modal"
-            >
-              Book a Tour
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg">
-        <div class="card">
-          <img
-            src="images/slide2.jpg"
-            class="card-img-top"
-            alt="Mountain landscape"
-          />
-          <div class="card-body">
-            <h3 class="card-title">Mountain Tour</h3>
-            <p class="card-text">
-              Explore beautiful mountains and scenic landscapes.
-            </p>
-            <button
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#booking-modal"
-            >
-              Book a Tour
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg">
-        <div class="card">
-          <img
-            src="images/slide3.jpg"
-            class="card-img-top"
-            alt="Winter landscape"
-          />
-          <div class="card-body">
-            <h3 class="card-title">Winter Adventure</h3>
-            <p class="card-text">
-              Experience exciting adventures in the snow.
-            </p>
-            <button
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#booking-modal"
-            >
-              Book a Tour
-            </button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<section id="faq" class="py-md-5">
-  <h2 class="my-5 text-center">
-    Frequently Asked Questions
-  </h2>
-
-  <div class="container">
-    <div class="accordion w-75 mx-auto" id="faqAccordion">
-
-      <div class="accordion-item">
-        <h3 class="accordion-header">
-          <button
-            class="accordion-button"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#faqOne"
-            aria-expanded="true"
-            aria-controls="faqOne"
-          >
-            How long are the trips?
-          </button>
-        </h3>
-        <div
-          id="faqOne"
-          class="accordion-collapse collapse show"
-          data-bs-parent="#faqAccordion"
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide="next"
         >
-          <div class="accordion-body">
-            Trip duration depends on the package you choose.
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+      <section class="overview">
+        <div class="container h-100 d-flex align-items-center">
+          <div class="row w-100 text-center fs-4">
+            <div class="col-xl">
+              <i class="bi bi-airplane-fill me-2"></i>
+              Amazing Destinations
+            </div>
+
+            <div class="col-xl">
+              <i class="bi bi-wallet-fill me-2"></i>
+              Affordable Prices
+            </div>
+
+            <div class="col-xl">
+              <i class="bi bi-person-check-fill me-2"></i>
+              Experienced Guides
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section id="packages" class="pt-md-5">
+        <h2 class="text-center my-5">Packages</h2>
 
-      <div class="accordion-item">
-        <h3 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#faqTwo"
-            aria-expanded="false"
-            aria-controls="faqTwo"
-          >
-            What should I bring?
-          </button>
-        </h3>
-        <div
-          id="faqTwo"
-          class="accordion-collapse collapse"
-          data-bs-parent="#faqAccordion"
-        >
-          <div class="accordion-body">
-            Bring warm clothing, comfortable shoes and a camera.
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg">
+              <div class="card">
+                <img
+                  src="images/slide1.jpg"
+                  class="card-img-top"
+                  alt="Northern lights"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Northern Lights Tour</h3>
+                  <p class="card-text">
+                    Discover the beauty of the northern lights.
+                  </p>
+                  <button
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#booking-modal"
+                  >
+                    Book a Tour
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg">
+              <div class="card">
+                <img
+                  src="images/slide2.jpg"
+                  class="card-img-top"
+                  alt="Mountain landscape"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Mountain Tour</h3>
+                  <p class="card-text">
+                    Explore beautiful mountains and scenic landscapes.
+                  </p>
+                  <button
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#booking-modal"
+                  >
+                    Book a Tour
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg">
+              <div class="card">
+                <img
+                  src="images/slide3.jpg"
+                  class="card-img-top"
+                  alt="Winter landscape"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Winter Adventure</h3>
+                  <p class="card-text">
+                    Experience exciting adventures in the snow.
+                  </p>
+                  <button
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#booking-modal"
+                  >
+                    Book a Tour
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section id="faq" class="py-md-5">
+        <h2 class="my-5 text-center">Frequently Asked Questions</h2>
 
-      <div class="accordion-item">
-        <h3 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#faqThree"
-            aria-expanded="false"
-            aria-controls="faqThree"
-          >
-            How can I book a tour?
-          </button>
-        </h3>
-        <div
-          id="faqThree"
-          class="accordion-collapse collapse"
-          data-bs-parent="#faqAccordion"
-        >
-          <div class="accordion-body">
-            Click the Book a Tour button and select your preferred tour.
+        <div class="container">
+          <div class="accordion w-75 mx-auto" id="faqAccordion">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqOne"
+                  aria-expanded="true"
+                  aria-controls="faqOne"
+                >
+                  How long are the trips?
+                </button>
+              </h3>
+              <div
+                id="faqOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Trip duration depends on the package you choose.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqTwo"
+                  aria-expanded="false"
+                  aria-controls="faqTwo"
+                >
+                  What should I bring?
+                </button>
+              </h3>
+              <div
+                id="faqTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Bring warm clothing, comfortable shoes and a camera.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqThree"
+                  aria-expanded="false"
+                  aria-controls="faqThree"
+                >
+                  How can I book a tour?
+                </button>
+              </h3>
+              <div
+                id="faqThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Click the Book a Tour button and select your preferred tour.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-light text-center py-5 mt-5">
+      <div class="container">
+        <p class="display-5 mb-3">Aurora Tours</p>
+        <small class="text-white-50">
+          &copy; 2026 Aurora Tours. All rights reserved.
+        </small>
       </div>
+    </footer>
 
-    </div>
-  </div>
-</section>
-</main>
-<footer class="bg-dark text-light text-center py-5 mt-5">
-  <div class="container">
-    <p class="display-5 mb-3">Aurora Tours</p>
-    <small class="text-white-50">
-      &copy; 2026 Aurora Tours. All rights reserved.
-    </small>
-  </div>
-</footer>
-    
     <!-- link to BootStrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
